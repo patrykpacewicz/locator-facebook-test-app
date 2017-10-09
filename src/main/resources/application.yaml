@@ -1,0 +1,7 @@
+app:
+  name: locator
+
+locator:
+  geonames:
+    countries: "geonames/countryInfo.txt"
+    cities: "geonames/cities1000.txt"

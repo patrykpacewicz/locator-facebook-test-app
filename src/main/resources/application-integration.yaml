@@ -1,0 +1,4 @@
+locator:
+  facebook:
+    appId: "app-id"
+    appSecret: "app-secret"
