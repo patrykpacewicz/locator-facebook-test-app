@@ -1,11 +1,24 @@
-# Locator
+Locator
+=======
 
-https://graph.facebook.com/v2.10/search?center=52.40692%2C16.92993&distance=65000&fields=name%2Clocation&format=json&limit=1000&method=get&pretty=0&q=allegro&suppress_http_code=1&type=place
+Simple application to play with facebook graph api
 
-http://download.geonames.org/export/dump/
+### How to run
 
-http://download.geonames.org/export/dump/allCountries.zip
-http://download.geonames.org/export/dump/cities1000.zip
-http://download.geonames.org/export/dump/readme.txt
+```bash
+# Create configuration with facebook key
 
-http://www.citymayors.com/statistics/largest-cities-area-125.html
+cat <<EOF > application-prod.yaml
+locator:
+  facebook:
+    appId: "facebook-app-id"
+    appSecret: "facebook-app-secret"
+EOF
+
+# Run application
+SPRING_PROFILES_ACTIVE="prod" ./gradlew bootRun
+```
+
+Open [http://localhost:8080/documentation][app] in your favorite web browser
+
+[app]: http://localhost:8080/documentation

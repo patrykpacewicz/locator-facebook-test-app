@@ -69,5 +69,5 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 .DS_Store
-/application.yaml
+/application*.yaml
 /bin/tmp
