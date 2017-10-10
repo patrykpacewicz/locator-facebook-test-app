@@ -6,4 +6,5 @@ package object locator {
 
   case class Place(name: String, latitude: Double, longitude: Double)
 
+  case class FbConnectionError(message: String) extends Exception(message)
 }

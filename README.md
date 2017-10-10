@@ -1,5 +1,5 @@
-Locator
-=======
+locator-facebook-test-app
+=========================
 
 Simple application to play with facebook graph api
 
