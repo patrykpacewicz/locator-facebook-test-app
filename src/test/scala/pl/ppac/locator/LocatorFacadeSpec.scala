@@ -31,6 +31,18 @@ class LocatorFacadeSpec extends UnitFlatSpec {
     results should equal(expected)
   }
 
+  it should "throw exception when there is facebook connection problem" in {
+    // given
+    val country = "Poland"
+    val city = "Poznań"
+    val query = "fb-oauth-err"
+
+    assertThrows[FbConnectionError] {
+      // when
+      locatorFacade.findPlaces(country, city, query)
+    }
+  }
+
   it should "filter out results from different cities" in {
     // given
     val country = "Poland"
